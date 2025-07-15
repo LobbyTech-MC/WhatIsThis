@@ -24,8 +24,11 @@ SOFTWARE.
  */
 package io.github.steve4744.whatisthis.display;
 
+import org.bukkit.FluidCollisionMode;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
+import org.bukkit.util.RayTraceResult;
+
 import io.github.steve4744.whatisthis.WhatIsThis;
 
 public class DisplayHandler {
@@ -84,5 +87,15 @@ public class DisplayHandler {
 				cm.showMessage(player, message, prefix, block);
 			}
 		}
+	}
+
+	public RayTraceResult getRayTraceResult(Player player) {
+		return player.getWorld().rayTrace(player.getEyeLocation(),
+				player.getEyeLocation().getDirection(),
+				10.0,
+				FluidCollisionMode.NEVER,
+				false,
+				0.1,
+				entity -> !entity.getUniqueId().equals(player.getUniqueId()));
 	}
 }

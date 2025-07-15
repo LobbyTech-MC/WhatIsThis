@@ -50,7 +50,7 @@ public class PlayerMoveListener implements Listener {
 		if (!player.hasPermission("whatisthis.use")) {
 			return;
 		}
-		RayTraceResult result = Utils.getRayTraceResult(player);
+		RayTraceResult result = plugin.getDisplayHandler().getRayTraceResult(player);
 
 		if (Utils.isBlock(result)) {
 			plugin.getDataHandler().processBlock(result.getHitBlock(), player);

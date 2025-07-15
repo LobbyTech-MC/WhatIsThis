@@ -1,7 +1,7 @@
 /*
  * MIT License
 
-Copyright (c) 2023 steve4744
+Copyright (c) 2025 steve4744
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -30,7 +30,6 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import org.bukkit.FluidCollisionMode;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Entity;
@@ -67,16 +66,6 @@ public class Utils {
 		} catch(IllegalStateException ex) {
 		}
 		return null;
-	}
-
-	public static RayTraceResult getRayTraceResult(Player player) {
-		return player.getWorld().rayTrace(player.getEyeLocation(),
-				player.getEyeLocation().getDirection(),
-				10.0,
-				FluidCollisionMode.NEVER,
-				false,
-				0.1,
-				entity -> !entity.getUniqueId().equals(player.getUniqueId()));
 	}
 
 	public static boolean isBlock(RayTraceResult result) {

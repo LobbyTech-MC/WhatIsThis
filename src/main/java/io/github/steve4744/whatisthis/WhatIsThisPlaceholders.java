@@ -83,11 +83,11 @@ public class WhatIsThisPlaceholders extends PlaceholderExpansion {
 			return plugin.getDataHandler().getDisplayName(Utils.getTargetBlock(player), player);
 
 		} else if (identifier.equals("entityname")) {
-			RayTraceResult result = Utils.getRayTraceResult(player);
+			RayTraceResult result = plugin.getDisplayHandler().getRayTraceResult(player);
 			return Utils.isEntity(result) ? plugin.getDataHandler().getEntityDisplayName(result.getHitEntity(), player) : "";
 
 		} else if (identifier.equals("resourcename")) {
-			RayTraceResult result = Utils.getRayTraceResult(player);
+			RayTraceResult result = plugin.getDisplayHandler().getRayTraceResult(player);
 			if (Utils.isBlock(result)) {
 				return plugin.getDataHandler().getCustomResourceName(Utils.getTargetBlock(player));
 
@@ -97,7 +97,7 @@ public class WhatIsThisPlaceholders extends PlaceholderExpansion {
 			return "";
 
 		} else if (identifier.startsWith("location")) {
-			RayTraceResult result = Utils.getRayTraceResult(player);
+			RayTraceResult result = plugin.getDisplayHandler().getRayTraceResult(player);
 			if (Utils.isBlock(result)) {
 				Block block = result.getHitBlock();
 				if (plugin.getDataHandler().isBlacklisted(block)) {

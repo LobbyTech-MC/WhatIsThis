@@ -63,6 +63,10 @@ Crops:
 Trapdoor:
   display_state: false
 
+# Set the max distance for targeting block or entity
+View:
+  max_distance: 10
+
 # Choose the method(s) to display the block/entity info by enabling the preferred option(s).
 # If the method is enabled and 'on_sneak' is also true, the info is only displayed if
 # the player is 'sneaking' (holding down the Shift key).
