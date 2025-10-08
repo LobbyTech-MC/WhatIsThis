@@ -75,7 +75,7 @@ public class DisplayHandler {
 			if (!plugin.getSettings().isBossBarOnSneak() || (plugin.getSettings().isBossBarOnSneak() && player.isSneaking())) {
 				BossBarManager bm = new BossBarManager(plugin);
 				if (block != null) {
-					health = health / 100;
+					health = Math.min(health / 100, 1.0);
 				}
 				bm.setBar(player, message, prefix, health);
 			}
