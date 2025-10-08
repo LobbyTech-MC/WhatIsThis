@@ -261,7 +261,7 @@ public class Settings {
 		return customBlacklist.get(customName) != null ? customBlacklist.get(customName) : List.of();
 	}
 
-	public double getMaxDistance(double distance) {
+	public double getMaxDistance() {
 		return config.getDouble("View.max_distance", 10.0);
 	}
 }

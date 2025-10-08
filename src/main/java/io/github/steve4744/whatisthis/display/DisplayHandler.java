@@ -92,7 +92,7 @@ public class DisplayHandler {
 	public RayTraceResult getRayTraceResult(Player player) {
 		return player.getWorld().rayTrace(player.getEyeLocation(),
 				player.getEyeLocation().getDirection(),
-				10.0,
+				plugin.getSettings().getMaxDistance(),
 				FluidCollisionMode.NEVER,
 				false,
 				0.1,
