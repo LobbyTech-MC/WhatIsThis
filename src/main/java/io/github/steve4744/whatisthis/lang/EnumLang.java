@@ -131,6 +131,8 @@ public enum EnumLang {
 	PL_PL("pl_pl", new HashMap<String, String>()),
 	PT_BR("pt_br", new HashMap<String, String>()),
 	PT_PT("pt_pt", new HashMap<String, String>()),
+	QCB_ES("qcb_es", new HashMap<String, String>()),
+	QID("qid", new HashMap<String, String>()),
 	QYA_AA("qya_aa", new HashMap<String, String>()),
 	RO_RO("ro_ro", new HashMap<String, String>()),
 	RPR("rpr", new HashMap<String, String>()),
