@@ -77,8 +77,11 @@ View:
 Display:
   # If auto_display is true the name will be displayed simply by looking at the block or entity.
   auto_display: false
-  # If enabled is true the custom block name will be prefixed by the name of the plugin providing the custom block.
-  # Each plugin can have a different coloured prefix by specifying a prefix separately as in the examples below.
+  # If prefix_custom_blocks is enabled the block or entity name will be prefixed by the name of
+  # the plugin providing the custom block or entity.
+  # Each plugin can have a different coloured prefix by specifying a named prefix separately as
+  # in the examples below.
+  # The name of the plugin can also be changed by replacing {PREFIX} with any other text.
   #prefix_custom_blocks:
   #  enabled: true
   #  prefix: '&7[&f{PREFIX}&7] '
