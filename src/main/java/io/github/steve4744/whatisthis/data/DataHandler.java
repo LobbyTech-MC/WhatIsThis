@@ -320,6 +320,12 @@ public class DataHandler {
 		return ((Damageable) entity).getHealth() / maxhealth;
 	}
 
+	/**
+	 * Process the block being targeted.
+	 *
+	 * @param block
+	 * @param player
+	 */
 	public void processBlock(Block block, Player player) {
 		if (plugin.getSettings().isIgnoreAllBlocks()) {
 			return;
@@ -331,6 +337,12 @@ public class DataHandler {
 		plugin.getDisplayHandler().getVisualMethod(prefix, getDisplayName(block, player), player, block, getAge(block));
 	}
 
+	/**
+	 * Process the entity being targeted, ignoring dropped items.
+	 *
+	 * @param entity
+	 * @param player
+	 */
 	public void processEntity(Entity entity, Player player) {
 		if (plugin.getSettings().isIgnoreAllEntities()) {
 			return;
@@ -338,7 +350,7 @@ public class DataHandler {
 		if (plugin.getConfig().getStringList("BlacklistedWorlds").contains(player.getWorld().getName())) {
 			return;
 		}
-		if (entity.getType().toString().equalsIgnoreCase("dropped_item")) {
+		if (entity.getType().toString().equalsIgnoreCase("item")) {
 			return;
 		}
 		String prefix = plugin.getSettings().isCustomPrefixEnabled() ? getCustomPrefix(null, entity) : "";
