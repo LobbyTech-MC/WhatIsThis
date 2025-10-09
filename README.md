@@ -31,13 +31,15 @@ The following plugins which provide a number of custom blocks and entities are s
 
 [Slimefun4 - RC-37](https://github.com/Slimefun/Slimefun4/ "Slimefun4") by TheBusyBiscuit
 
-[Nova - 0.18.1](https://github.com/xenondevs/Nova/ "Nova") by xenondevs
+[Nova - 0.19](https://github.com/xenondevs/Nova/ "Nova") by xenondevs
 
-[ItemsAdder - 4.0.9](https://www.spigotmc.org/resources/%E2%9C%85must-have%E2%9C%85-itemsadder%E2%9C%A8custom-items-huds-guis-mobs-3dmodels-emojis-blocks-wings-hats-liquids.73355/ "ItemsAdder") by LoneDev
+[ItemsAdder - 4.0.10](https://www.spigotmc.org/resources/%E2%9C%85must-have%E2%9C%85-itemsadder%E2%9C%A8custom-items-huds-guis-mobs-3dmodels-emojis-blocks-wings-hats-liquids.73355/ "ItemsAdder") by LoneDev
 
-[Nexo - 1.4.0](https://www.spigotmc.org/resources/nexo-custom-blocks-items-furniture-emotes-resourcepack-manager-1-20-4-1-21-4.121103/ "Nexo") by Boy0000
+[Nexo - 1.8.0](https://polymart.org/product/6901/nexo "Nexo") by Boy0000
 
-[MythicMobs - 5.8.2](https://www.spigotmc.org/resources/mythicmobs-free-version.5702/ "MythicMobs") by Xikage
+[MythicMobs - 5.9.5](https://www.spigotmc.org/resources/mythicmobs-free-version.5702/ "MythicMobs") by Xikage
+
+[Citizens - 2.0.39](https://www.spigotmc.org/resources/citizens.13811/ "Citizens") by fullwall
 
 [Oraxen - 1.164.0](https://github.com/oraxen/oraxen/ "Oraxen") by Th0rgal
 
@@ -103,4 +105,4 @@ WhatIsThis can be [downloaded from Spigot](https://www.spigotmc.org/resources/wh
 
 
 
-Updated 28th April 2025 by steve4744
+Updated 9th October 2025 by steve4744
