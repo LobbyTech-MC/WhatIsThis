@@ -657,7 +657,7 @@ public class DataHandler {
 			yield ((MushroomCow)entity).getVariant().toString();
 		}
 		case "PAINTING" -> {
-			yield ((Painting)entity).getArt().toString();
+			yield ((Painting)entity).getArt().getKey().getKey();
 		}
 		case "PARROT" -> {
 			yield ((Parrot)entity).getVariant().toString();
