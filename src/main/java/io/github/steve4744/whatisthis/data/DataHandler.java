@@ -467,7 +467,8 @@ public class DataHandler {
 	}
 
 	public boolean isCustomBlock(Block block) {
-		return isSlimefunBlock(block) || isNovaBlock(block) || isItemsAdderBlock(block) || isOraxenBlock(block);
+		return isSlimefunBlock(block) || isNovaBlock(block) || isItemsAdderBlock(block) ||
+				isOraxenBlock(block) || isNexoBlock(block);
 	}
 
 	private boolean isSlimefunBlock(Block block) {
@@ -657,7 +658,7 @@ public class DataHandler {
 			yield ((MushroomCow)entity).getVariant().toString();
 		}
 		case "PAINTING" -> {
-			yield ((Painting)entity).getArt().toString();
+			yield ((Painting)entity).getArt().getKey().getKey();
 		}
 		case "PARROT" -> {
 			yield ((Parrot)entity).getVariant().toString();
