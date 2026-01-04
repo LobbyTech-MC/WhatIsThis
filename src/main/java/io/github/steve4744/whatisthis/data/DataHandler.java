@@ -315,7 +315,7 @@ public class DataHandler {
 		}
 		LivingEntity le = (LivingEntity) entity;
 
-		double maxhealth = le.getAttribute(Attribute.MAX_HEALTH).getValue();
+		double maxhealth = le.getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue();
 
 		return ((Damageable) entity).getHealth() / maxhealth;
 	}
