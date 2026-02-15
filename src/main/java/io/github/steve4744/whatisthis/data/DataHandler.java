@@ -239,7 +239,7 @@ public class DataHandler {
 				return "";
 			}
 			targetName = ChatColor.stripColor(ItemsAdderHandler.getEntityDisplayName(entity));
-			if (targetName == null && plugin.getSettings().getCustomBlacklist(ITEMSADDER).contains(targetName)) {
+			if (targetName == null || plugin.getSettings().getCustomBlacklist(ITEMSADDER).contains(targetName)) {
 				return "";
 			}
 
@@ -248,7 +248,7 @@ public class DataHandler {
 				return "";
 			}
 			targetName = ChatColor.stripColor(MythicMobsHandler.getEntityDisplayName(entity));
-			if (targetName == null && plugin.getSettings().getCustomBlacklist(MYTHICMOBS).contains(targetName)) {
+			if (targetName == null || plugin.getSettings().getCustomBlacklist(MYTHICMOBS).contains(targetName)) {
 				return "";
 			}
 
@@ -257,7 +257,7 @@ public class DataHandler {
 				return "";
 			}
 			targetName = ChatColor.stripColor(OraxenHandler.getEntityDisplayName(entity));
-			if (targetName == null && plugin.getSettings().getCustomBlacklist(ORAXEN).contains(targetName)) {
+			if (targetName == null || plugin.getSettings().getCustomBlacklist(ORAXEN).contains(targetName)) {
 				return "";
 			}
 
